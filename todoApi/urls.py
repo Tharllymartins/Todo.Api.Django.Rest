@@ -19,7 +19,7 @@ from rest_framework import routers
 from tasks.api.viewsets import TaskViewSet
 
 router = routers.DefaultRouter()
-router.register(r'task', TaskViewSet)
+router.register(r'task', TaskViewSet, base_name="Task")
 
 urlpatterns = [
     path('', include(router.urls)),
