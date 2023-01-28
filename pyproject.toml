@@ -8,7 +8,7 @@ packages = [{include = "todo"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-django = "2.0.1"
+django = "2.1.7"
 djangorestframework = "3.8.2"
 
 

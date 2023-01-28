@@ -1,10 +1,10 @@
 [[package]]
 name = "django"
-version = "2.0.1"
+version = "2.1.7"
 description = "A high-level Python Web framework that encourages rapid development and clean, pragmatic design."
 category = "main"
 optional = false
-python-versions = ">=3.4"
+python-versions = ">=3.5"
 
 [package.dependencies]
 pytz = "*"
@@ -32,12 +32,12 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "2a2f8a504edc72bbf0a8e93ed8c9ffbbb664009b38e727d6540b4d270326e334"
+content-hash = "f01b97e86f646a34166255ae53f8fa16f46ae6dd821f721c26319027c9298ef7"
 
 [metadata.files]
 django = [
-    {file = "Django-2.0.1-py3-none-any.whl", hash = "sha256:52475f607c92035d4ac8fee284f56213065a4a6b25ed43f7e39df0e576e69e9f"},
-    {file = "Django-2.0.1.tar.gz", hash = "sha256:d96b804be412a5125a594023ec524a2010a6ffa4d408e5482ab6ff3cb97ec12f"},
+    {file = "Django-2.1.7-py3-none-any.whl", hash = "sha256:275bec66fd2588dd517ada59b8bfb23d4a9abc5a362349139ddda3c7ff6f5ade"},
+    {file = "Django-2.1.7.tar.gz", hash = "sha256:939652e9d34d7d53d74d5d8ef82a19e5f8bb2de75618f7e5360691b6e9667963"},
 ]
 djangorestframework = [
     {file = "djangorestframework-3.8.2-py2.py3-none-any.whl", hash = "sha256:c375e4f95a3a64fccac412e36fb42ba36881e52313ec021ef410b40f67cddca4"},
