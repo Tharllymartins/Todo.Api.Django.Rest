@@ -17,11 +17,13 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 from tasks.api.viewsets import TaskViewSet
+from rest_framework.authtoken.views import obtain_auth_token
 
 router = routers.DefaultRouter()
 router.register(r'task', TaskViewSet, base_name="Task")
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('auth/me/', obtain_auth_token, name='api-token-auth'),
     path('admin/', admin.site.urls),
 ]
