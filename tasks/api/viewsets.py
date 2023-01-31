@@ -14,7 +14,7 @@ class TaskViewSet(ModelViewSet):
     search_fields = ["name"]
     
     def get_queryset(self):
-        queryset = Task.objects.all()
+        queryset = Task.objects.filter(user=self.request.user.id)
         
         status = self.request.query_params.get("status", None)
         
