@@ -10,7 +10,6 @@ class Task(models.Model):
         (2, "Done")
     ]
     
-    id = models.UUIDField(default=uuid.uuid4, editable=False, unique=True, primary_key=True)
     name = models.CharField(max_length=250)
     user = models.ForeignKey(User, on_delete="CASCADE")
     status = models.IntegerField(default=0, choices=task_status)
