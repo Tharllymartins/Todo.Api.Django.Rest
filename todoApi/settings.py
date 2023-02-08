@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
 
-ALLOWED_HOSTS = ['todo-api-django.herokuapp.com']
+ALLOWED_HOSTS = ['todo-api-django.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -123,9 +123,10 @@ STATIC_URL = '/static/'
 
 # Authetication
 REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 100,
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
-    ],
-    # ...
+    ]
 }
 
